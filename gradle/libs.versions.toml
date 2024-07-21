@@ -40,6 +40,7 @@ play-services-auth = "21.2.0"
 spotlessPluginGradle = "6.25.0"
 
 ktlint = "11.5.1"
+material = "1.10.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidx-core-ktx" }
@@ -103,6 +104,7 @@ ktlint-rule-engine-core = { group = "com.pinterest.ktlint", name = "ktlint-rule-
 android-gradle-plugin = { group = "com.android.tools.build", name = "gradle", version.ref = "agp" }
 kotlin-gradle-plugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
 ksp-gradle-plugin = { group = "com.google.devtools.ksp", name = "com.google.devtools.ksp.gradle.plugin", version.ref = "ksp" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 
 [plugins]
 # gradle plugins

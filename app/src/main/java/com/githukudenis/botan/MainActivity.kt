@@ -211,6 +211,7 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -221,7 +222,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.githukudenis.botan.ui.theme.BotanTheme
+import com.githukudenis.botan.core.design_system.ui.theme.BotanTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -244,7 +245,11 @@ fun HomeScreen(modifier: Modifier = Modifier) {
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Image(painter = painterResource(id = R.drawable.logo), contentDescription = "logo")
+        Image(
+            modifier = Modifier.size(120.dp),
+            painter = painterResource(id = R.drawable.logo),
+            contentDescription = stringResource(R.string.logo)
+        )
         Spacer(modifier = Modifier.height(12.dp))
         Text(text = stringResource(R.string.app_name), style = MaterialTheme.typography.headlineSmall)
     }

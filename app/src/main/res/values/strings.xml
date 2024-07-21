@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Botan</string>
+    <string name="logo">App logo</string>
 </resources>
