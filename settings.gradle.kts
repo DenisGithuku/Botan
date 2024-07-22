@@ -1,4 +1,5 @@
 pluginManagement {
+    includeBuild("conventions")
     repositories {
         google {
             content {
@@ -21,3 +22,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Botan"
 include(":app")
+include(":core:design-system")
