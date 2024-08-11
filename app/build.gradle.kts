@@ -27,4 +27,4 @@ android {
     packaging { resources { excludes += "/META-INF/{AL2.0,LGPL2.1}" } }
 }
 
-dependencies { implementation(project(AndroidModules.Ui.designsystem)) }
+dependencies { implementation(project(AndroidModules.Core.designsystem)) }

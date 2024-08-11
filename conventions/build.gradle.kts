@@ -19,6 +19,7 @@ java {
 dependencies {
     implementation(libs.kotlin.gradle.plugin)
     implementation(libs.android.gradle.plugin)
+    implementation(libs.ksp.gradle.plugin)
 }
 
 gradlePlugin {
@@ -46,6 +47,10 @@ gradlePlugin {
         register("hilt-convention"){
             id = "botan.convention.hilt"
             implementationClass = "HiltConventionPlugin"
+        }
+        register("room-convention") {
+            id = "botan.convention.room"
+            implementationClass = "AndroidRoomConventionPlugin"
         }
     }
 }

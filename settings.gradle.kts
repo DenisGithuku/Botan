@@ -23,3 +23,4 @@ dependencyResolutionManagement {
 rootProject.name = "Botan"
 include(":app")
 include(":core:design-system")
+include(":core:database")
