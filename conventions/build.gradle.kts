@@ -50,7 +50,7 @@ gradlePlugin {
         }
         register("room-convention") {
             id = "botan.convention.room"
-            implementationClass = "AndroidRoomConventionPlugin"
+            implementationClass = "RoomConventionPlugin"
         }
     }
 }

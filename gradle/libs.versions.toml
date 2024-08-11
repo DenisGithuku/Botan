@@ -5,12 +5,12 @@ gradle-plugin-firebase-crashlytics = "3.0.2"
 gradle-plugin-firebase-performance = "1.4.2"
 gradle-plugin-firebase-app-distribution = "5.0.0"
 gradle-plugin-google-services = "4.4.2"
-agp = "8.5.1"
+agp = "8.5.2"
 kotlin = "2.0.0"
 core-ktx = "1.13.1"
 junit = "4.13.2"
 junit-version = "1.2.1"
-activity-compose = "1.9.0"
+activity-compose = "1.9.1"
 appcompat = "1.7.0"
 compose-bom = "2024.06.00"
 androidx-splash-screen = "1.0.1"
@@ -18,13 +18,13 @@ androidx-compose-material = "1.6.8"
 androidx-core-ktx = "1.13.1"
 androidx-test-ext-junit = "1.2.1"
 androidx-test-espresso = "3.6.1"
-androidx-work-manager = "2.9.0"
+androidx-work-manager = "2.9.1"
 androidx-room = "2.6.1"
 androidx-datastore = "1.1.1"
 androidx-hilt = "2.49"
 androidx-navigation = "2.7.7"
 androidx-navigation-hilt = "1.2.0"
-androidx-lifecycle-runtime-ktx = "2.8.3"
+androidx-lifecycle-runtime-ktx = "2.8.4"
 timber = "5.0.1"
 
 # kotlin libraries
@@ -56,7 +56,7 @@ androidx-hilt-compiler = { group = "com.google.dagger", name = "hilt-android-com
 # androidx-room
 androidx-room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "androidx-room" }
 androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "androidx-room" }
-androidx-room-extensions = { group = "androidx.room", name = "room-ktx", version.ref = "androidx-room" }
+androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "androidx-room" }
 androidx-room-testing = { group = "androidx.room", name = "room-testing", version.ref = "androidx-room" }
 # androidx-work-manager
 androidx-work-runtime = { group = "androidx.work", name = "work-runtime-ktx", version.ref = "androidx-work-manager" }
@@ -130,6 +130,7 @@ botan-compose-application-convention = { id = "botan.convention.compose.applicat
 botan-compose-library-convention = { id = "botan.convention.compose.library", version = "unspecified"}
 botan-module-convention = { id = "botan.convention.module", version = "unspecified"}
 botan-hilt-convention = { id = "botan.convention.hilt", version = "unspecified"}
+botan-room-convention = { id = "botan.convention.room", version = "unspecified"}
 
 
 [bundles]
