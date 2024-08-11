@@ -1,8 +1,6 @@
-import com.android.build.api.dsl.ApplicationExtension
 import com.android.build.api.dsl.LibraryExtension
 import configuration.configureKotlinAndroid
 import extensions.androidTestImplementation
-import extensions.getBundle
 import extensions.getLibrary
 import extensions.implementation
 import extensions.testImplementation

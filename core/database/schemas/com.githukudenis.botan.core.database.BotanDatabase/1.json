@@ -1,0 +1,112 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "cd395288724e10ad9d129c87f55cdfed",
+    "entities": [
+      {
+        "tableName": "PlantData",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`plant_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `common_name` TEXT NOT NULL, `scientific_name` TEXT NOT NULL, `description` TEXT NOT NULL, `image_uri` TEXT NOT NULL, `watering_frequency` TEXT NOT NULL, `light_requirements` TEXT NOT NULL, `temperature_range` TEXT NOT NULL, `humidity` INTEGER NOT NULL, `last_watered` INTEGER NOT NULL, `next_watering_due` INTEGER NOT NULL, `fertilization` TEXT, `notes` TEXT, `tags` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "plant_id",
+            "columnName": "plant_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "common_name",
+            "columnName": "common_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "scientific_name",
+            "columnName": "scientific_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "image_uri",
+            "columnName": "image_uri",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "watering_frequency",
+            "columnName": "watering_frequency",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "light_requirements",
+            "columnName": "light_requirements",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "temperature_range",
+            "columnName": "temperature_range",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "humidity",
+            "columnName": "humidity",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "last_watered",
+            "columnName": "last_watered",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "next_watering_due",
+            "columnName": "next_watering_due",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fertilization",
+            "columnName": "fertilization",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "notes",
+            "columnName": "notes",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "tags",
+            "columnName": "tags",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "plant_id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'cd395288724e10ad9d129c87f55cdfed')"
+    ]
+  }
+}
