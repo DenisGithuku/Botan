@@ -38,7 +38,10 @@ class LibraryConventionPlugin : Plugin<Project> {
                 implementation(libs.getLibrary("androidx-core-ktx"))
                 implementation(libs.getLibrary("androidx-appcompat"))
                 androidTestImplementation(libs.getLibrary("androidx-test-ext-junit"))
-                androidTestImplementation(libs.getLibrary("androidx-espresso-core"))
+                androidTestImplementation(libs.getLibrary("core-android-test"))
+                androidTestImplementation(libs.getLibrary("truth-android-test"))
+                androidTestImplementation(libs.getLibrary("kotlinx-coroutines-test"))
+                androidTestImplementation(libs.getLibrary("androidx-test-espresso-core"))
                 // timber
                 implementation(libs.getLibrary("timber"))
             }

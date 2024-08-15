@@ -4,6 +4,10 @@ plugins {
     alias(libs.plugins.botan.hilt.convention)
 }
 
-android { namespace = "com.githukudenis.botan.core.database" }
+android {
+    namespace = "com.githukudenis.botan.core.database"
+
+    defaultConfig { testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner" }
+}
 
 dependencies {}
