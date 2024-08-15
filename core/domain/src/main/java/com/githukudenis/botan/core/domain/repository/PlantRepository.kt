@@ -25,7 +25,7 @@ interface PlantRepository {
 
     suspend fun deletePlant(plant: Plant)
 
-    fun getPlantById(id: Long): Flow<Plant>
+    fun getPlantById(id: Long): Plant
 
     suspend fun updatePlant(plant: Plant)
 }

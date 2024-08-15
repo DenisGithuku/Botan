@@ -35,7 +35,7 @@ class PlantRepositoryImpl @Inject constructor(private val plantDao: PlantDao) : 
         plantDao.deletePlant(plant.asPlantData())
     }
 
-    override fun getPlantById(id: Long): Flow<Plant> = flow { plantDao.getPlantById(id) }
+    override fun getPlantById(id: Long): Plant = plantDao.getPlantById(id).asPlant()
 
     override suspend fun updatePlant(plant: Plant) {
         plantDao.updatePlant(plant.asPlantData())
@@ -55,6 +55,25 @@ fun Plant.asPlantData(): PlantData {
         humidity = humidity,
         last_watered = lastWatered,
         next_watering_due = nextWateringDue,
+        fertilization = fertilization,
+        notes = notes,
+        tags = tags
+    )
+}
+
+fun PlantData.asPlant(): Plant {
+    return Plant(
+        plantId = plant_id,
+        commonName = common_name,
+        scientificName = scientific_name,
+        description = description,
+        imageUri = image_uri,
+        wateringFrequency = watering_frequency,
+        lightRequirements = light_requirements,
+        temperatureRange = temperature_range,
+        humidity = humidity,
+        lastWatered = last_watered,
+        nextWateringDue = next_watering_due,
         fertilization = fertilization,
         notes = notes,
         tags = tags

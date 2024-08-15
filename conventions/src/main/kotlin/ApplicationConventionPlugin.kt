@@ -35,7 +35,7 @@ class ApplicationConventionPlugin : Plugin<Project> {
                 implementation(libs.getLibrary("androidx-appcompat"))
                 implementation(libs.getLibrary("androidx-core-splashscreen"))
                 androidTestImplementation(libs.getLibrary("androidx-test-ext-junit"))
-                androidTestImplementation(libs.getLibrary("androidx-espresso-core"))
+                androidTestImplementation(libs.getLibrary("androidx-test-espresso-core"))
                 // timber
                 implementation(libs.getLibrary("timber"))
             }
