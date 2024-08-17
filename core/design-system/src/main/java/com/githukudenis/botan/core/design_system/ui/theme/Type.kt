@@ -25,12 +25,12 @@ import com.githukudenis.botan.core.design_system.R
 
 val PoppinsFamily =
     FontFamily(
-        Font(R.font.poppins_black),
-        Font(R.font.poppins_regular),
-        Font(R.font.poppins_bold, weight = FontWeight.Bold),
-        Font(R.font.poppins_semibold),
         Font(R.font.poppins_light),
-        Font(R.font.poppins_medium)
+        Font(R.font.poppins_regular),
+        Font(R.font.poppins_medium),
+        Font(R.font.poppins_semibold),
+        Font(R.font.poppins_bold, weight = FontWeight.Bold),
+        Font(R.font.poppins_black)
     )
 
 // Set of Material typography styles to start with
