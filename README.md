@@ -66,7 +66,7 @@
 
 ### Requirements
 
-Specify the tools, software versions, and any prerequisites needed to run or develop the app.
+Prerequisites needed to run or develop the app are:
 
 - **Android Studio version**: `Koala`
 - **Gradle version**: `8.5.2`
@@ -86,7 +86,7 @@ Step-by-step guide to setting up the project on a local machine.
 
 ### Build Variants
 
-Your app supports two build variants: `debug` and `release`.
+Botan supports two build variants: `debug` and `release`.
 
 - **Debug Variant:**
   - Used for development and testing.
@@ -105,8 +105,6 @@ The app uses local storage solutions to manage data:
   - Stores structured data such as plant information and care logs.
 - **Datastore:**
   - Manages user preferences like notification settings and theme choices.
-
-Ensure that the Room database schema and Datastore preferences are properly configured and maintained.
 
 ### Notifications
 
@@ -213,7 +211,7 @@ The app utilizes **Jetpack Compose** to build its user interface, providing a mo
 
 ## Testing
 
-### ### Unit Testing
+### Unit Testing
 
 Unit tests verify the functionality of components such as repositories, ViewModels, and other classes within the plant care app. The following tools and practices are used:
 
@@ -237,7 +235,7 @@ Instrumented tests run on Android devices or emulators and validate interactions
 
 ## Play Store Release
 
-### The app follows a date-based versioning strategy to manage version codes and names, ensuring clarity and uniqueness for each release.
+The app follows a date-based versioning strategy to manage version codes and names, ensuring clarity and uniqueness for each release.
 
 ### Version Code
 
